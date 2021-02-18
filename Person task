@@ -1,0 +1,35 @@
+public class PersonTask1 {
+
+	public static void main(String[] args) {
+		Person Bob = new Person("Bob", 27, "Artists");
+		Person Cheryl = new Person("Cheryl", 34, "Banker");
+		Person Andrew = new Person("Andrew", 25, "Engineer");
+
+		System.out.println(Bob.toString());
+		System.out.println(Cheryl.toString());
+		System.out.println(Andrew.toString());
+	}
+
+}
+
+
+///// in my Person class/////
+
+
+public class Person {
+	private String name;
+	private int age;
+	private String jobTitle;
+
+	public Person(String name, int age, String jobTitle) {
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+	}
+
+	@Override
+	public String toString() {
+		return "Hi I'm " + this.name + ", I'm " + this.age + " years old and I work as a " + this.jobTitle
+				+ ". Nice to meet you.";
+	}
+}
